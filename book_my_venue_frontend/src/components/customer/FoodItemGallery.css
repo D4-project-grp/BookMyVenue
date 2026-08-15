@@ -1,0 +1,58 @@
+.food-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  background: #eee;
+}
+.food-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.fg-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.food-gallery:hover .fg-arrow {
+  opacity: 1;
+}
+.fg-arrow.left { left: 6px; }
+.fg-arrow.right { right: 6px; }
+
+.fg-dots {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.fg-dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+}
+.fg-dots span.active {
+  background: #fff;
+  width: 14px;
+  border-radius: 3px;
+}

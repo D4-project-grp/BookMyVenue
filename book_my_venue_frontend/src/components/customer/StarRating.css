@@ -1,0 +1,13 @@
+.star-rating {
+  display: inline-flex;
+  gap: 2px;
+}
+.star {
+  color: #ddd;
+}
+.star.filled {
+  color: #ffb400;
+}
+.star.interactive {
+  cursor: pointer;
+}

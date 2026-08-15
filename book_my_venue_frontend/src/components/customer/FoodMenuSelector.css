@@ -1,0 +1,146 @@
+.fms-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+.fms-tab {
+  background: none;
+  border: none;
+  padding: 10px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #777;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.fms-tab.active {
+  color:  rgb(44, 52, 95);
+  border-bottom-color:  rgb(44, 52, 95);
+}
+.fms-tab-badge {
+  background:  rgb(44, 52, 95);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 1px 6px;
+}
+
+.fms-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.fms-count {
+  font-size: 12px;
+  color: #888;
+}
+.fms-diet-filter {
+  display: flex;
+  gap: 6px;
+}
+.fms-diet-filter button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+}
+.fms-diet-filter button.active {
+  border-color:  rgb(44, 52, 95);
+  background: #fdeef0;
+  color:  rgb(44, 52, 95);
+}
+
+.fms-empty {
+  color: #888;
+  font-size: 13px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.fms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.fms-card {
+  background: #fff;
+  border: 1.5px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+.fms-card.selected {
+  border-color:  rgb(44, 52, 95);
+}
+.fms-card-body {
+  padding: 10px 12px 12px;
+}
+.fms-card-title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+.fms-card-desc {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 10px;
+  line-height: 1.4;
+  min-height: 32px;
+}
+.fms-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fms-card-price {
+  font-weight: 700;
+  font-size: 14px;
+}
+.fms-card-price small {
+  font-weight: 400;
+  color: #999;
+  font-size: 11px;
+}
+.fms-select-btn {
+  border: 1.5px solid  rgb(44, 52, 95);
+  background: #fff;
+  color:  rgb(44, 52, 95);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fms-select-btn.selected {
+  background:  rgb(44, 52, 95);
+  color: #fff;
+}
+.fms-card-subtotal {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #1e824c;
+  font-weight: 600;
+  background: #e8f6ee;
+  border-radius: 6px;
+  padding: 5px 8px;
+}
