@@ -1,0 +1,225 @@
+.venue-details {
+  padding: 24px 32px 60px;
+}
+
+.venue-details-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.vd-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+.vd-title-row h1 {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+.vd-location {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+.vd-rating-badge {
+  background: #1e824c;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.vd-rating-badge span {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+}
+.vd-rating-badge small {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.vd-stats {
+  display: flex;
+  gap: 30px;
+  margin: 24px 0;
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.vd-stat {
+  display: flex;
+  flex-direction: column;
+}
+.vd-stat strong {
+  font-size: 18px;
+}
+.vd-stat span {
+  font-size: 12px;
+  color: #888;
+}
+
+.vd-section {
+  margin-bottom: 30px;
+}
+.vd-section h2 {
+  font-size: 19px;
+  margin: 0 0 14px;
+}
+.vd-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.vd-section-head h2 {
+  margin: 0;
+}
+.menu-preview-group {
+  margin-bottom: 18px;
+}
+.menu-preview-group h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #888;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.4px;
+  margin: 0 0 10px;
+}
+
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+.amenity-chip {
+  background: #f4f4f6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #444;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.food-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 8px;
+}
+.food-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.food-name {
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.food-type {
+  font-size: 11px;
+  color: #999;
+}
+.food-price {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 13px;
+  color: #d1263f;
+}
+
+.map-placeholder {
+  background: #eef1f5;
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.vd-sidebar {
+  position: relative;
+}
+.booking-card {
+  position: sticky;
+  top: 110px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+  padding: 22px;
+}
+.booking-price {
+  font-size: 24px;
+  font-weight: 800;
+}
+.booking-price small {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+}
+.booking-hint {
+  font-size: 12px;
+  color: #888;
+  margin: 8px 0 18px;
+}
+.booking-cta {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+}
+.booking-note {
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+  margin: 10px 0 0;
+}
+
+@media (max-width: 900px) {
+  .venue-details-layout {
+    grid-template-columns: 1fr;
+  }
+  .booking-card {
+    position: static;
+  }
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+.amenity-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f4f4f6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #444;
+  font-weight: 500;
+}
+.amenity-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1263f;
+  flex-shrink: 0;
+}
+.amenity-icon svg {
+  width: 100%;
+  height: 100%;
+}

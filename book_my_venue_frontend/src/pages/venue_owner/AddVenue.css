@@ -1,0 +1,49 @@
+.add-venue {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 30px; 
+}
+
+.add-venue-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.success-card {
+  background: white;
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(26, 60, 110, 0.12);
+  max-width: 420px;
+  width: 100%;
+}
+
+.success-icon {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.success-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.success-card p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.redirect-note {
+  font-size: 13px !important;
+  color: #94a3b8 !important;
+  font-style: italic;
+}

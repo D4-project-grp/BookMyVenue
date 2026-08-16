@@ -1,0 +1,145 @@
+.role-select-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a3c6e 0%, #2563eb 50%, #1a3c6e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.role-select-container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.role-select-logo {
+  text-align: center;
+  color: white;
+}
+
+.role-select-logo .logo-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.role-select-logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.role-select-logo p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.role-select-card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.role-select-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.role-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f8fafc;
+}
+
+.role-option:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+  transform: translateY(-1px);
+}
+
+.role-option.selected {
+  border-color: #1a3c6e;
+  background: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.role-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.role-option div {
+  flex: 1;
+}
+
+.role-option strong {
+  display: block;
+  font-size: 15px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.role-option p {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.role-check {
+  font-size: 18px;
+  color: #1a3c6e;
+  font-weight: 700;
+  width: 24px;
+  text-align: center;
+}
+
+.btn-continue {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #1a3c6e, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn-continue:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn-continue:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

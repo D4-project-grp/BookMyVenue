@@ -1,0 +1,329 @@
+.my-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 30px; 
+}
+
+.page-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-add-venue {
+  padding: 11px 22px;
+  background: linear-gradient(135deg, #1a3c6e, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-add-venue:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Empty state */
+.empty-state {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(26, 60, 110, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty-icon {
+  font-size: 56px;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+/* Listings grid */
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Venue card */
+.venue-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(26, 60, 110, 0.07);
+  width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.venue-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(26, 60, 110, 0.13);
+}
+
+.venue-card-image {
+  position: relative;
+  height: 160px;
+  width: 320px;
+  overflow: hidden;
+}
+
+.venue-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venue-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.venue-image-placeholder span {
+  font-size: 36px;
+}
+
+.venue-image-placeholder p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.venue-status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge-active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-default {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.venue-card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 12px;
+  
+}
+
+.venue-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.venue-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+  gap: 6px;
+}
+
+.venue-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.meta-icon {
+  font-size: 14px;
+}
+
+.venue-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.amenity-tag {
+  padding: 3px 9px;
+  background: #eff6ff;
+  color: #1a3c6e;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid #bfdbfe;
+}
+
+.amenity-more {
+  background: #f1f5f9;
+  color: #64748b;
+  border-color: #e2e8f0;
+}
+
+.venue-card-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-edit {
+  flex: 1;
+  padding: 9px;
+  background: #eff6ff;
+  color: #1a3c6e;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-edit:hover {
+  background: #1a3c6e;
+  color: white;
+  border-color: #1a3c6e;
+}
+
+.btn-bookings {
+  flex: 1;
+  padding: 9px;
+  background: #f0fdf4;
+  color: #065f46;
+  border: 1px solid #bbf7d0;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-bookings:hover {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.btn-delete {
+  padding: 9px 12px;
+  background: #fef2f2;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.btn-cancel-modal {
+  padding: 9px 20px;
+  background: #f1f5f9;
+  color: #475569;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-cancel-modal:hover {
+  background: #e2e8f0;
+}
+
+.btn-confirm-delete {
+  padding: 9px 20px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-confirm-delete:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .listings-grid {
+    grid-template-columns: 1fr;
+  }
+}
