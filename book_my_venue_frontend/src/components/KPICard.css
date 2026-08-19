@@ -1,0 +1,96 @@
+.kpi-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8eef5;
+  transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.kpi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.kpi-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kpi-icon {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.kpi-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin: 12px 0;
+  letter-spacing: -1px;
+}
+
+.kpi-trend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.kpi-trend.up {
+  color: #10b981;
+}
+
+.kpi-trend.down {
+  color: #ef4444;
+}
+
+.trend-icon {
+  font-size: 16px;
+}
+
+.trend-text {
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kpi-card {
+    padding: 20px;
+  }
+
+  .kpi-value {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-card {
+    padding: 16px;
+  }
+
+  .kpi-title {
+    font-size: 11px;
+  }
+
+  .kpi-value {
+    font-size: 20px;
+  }
+
+  .kpi-icon {
+    font-size: 20px;
+  }
+}
